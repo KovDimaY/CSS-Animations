@@ -224,17 +224,53 @@ body {
 * Hover Effect #4 ----------------------------------------------------
 */
 .hover-4 {
-  border: 2px solid #262626;
-  font-weight: 100;
-  transition: all 0.5s;
-  transition-property: border, font-weight, letter-spacing;
-  transition-duration: 1s;
+	overflow: visible;
+	background: #363636;
+	color: transparent;
 }
 
-.hover-4:hover {
-  font-weight: 900;
-  letter-spacing: 5px;
-  border: 7px solid #262626;
+.hover-4:before {
+  content: 'Hover me';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: #363636;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.hover-4:hover:before {
+  left: 100%;
+  transform: scale(0) rotateY(360deg);
+  opacity: 0;
+}
+
+.hover-4:after {
+  content: 'Hover me';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: #363636;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: scale(0) rotateY(0deg);
+  opacity: 0;
+}
+
+.hover-4:hover:after {
+  left: 0;
+  transform: scale(1) rotateY(360deg);
+  opacity: 1;
 }
 
 /**
@@ -496,4 +532,297 @@ body {
 
 .hover-7-2:hover:after {
 	transform: translate(0, 0);
+}
+
+/**
+* Hover Effect #8 ----------------------------------------------------
+*/
+.hover-8 {
+	transition: color 0.25s;
+}
+
+.hover-8:hover {
+	color: transparent;
+}
+
+.hover-8:before {
+	content: 'Hover me';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #262626;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(5);
+	opacity: 0;
+	transition: all .5s;
+}
+
+.hover-8:hover:before {
+	transform: scale(1);
+	opacity: 1;
+}
+
+/**
+* Hover Effect #9 ----------------------------------------------------
+*/
+.hover-9-1 {
+	transition: color 0.5s;
+}
+
+.hover-9-1:hover {
+	color: white;
+}
+
+.hover-9-1 span {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: #262626;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: scaleX(0);
+  transition: all 0.5s;
+  transform-origin: top;
+}
+
+.hover-9-1:hover span {
+  transform: scaleX(1);
+}
+
+.hover-9-1 span:nth-child(2) {
+  top: 25%;
+  transition-delay: 0.15s
+}
+
+.hover-9-1 span:nth-child(3) {
+  top: 50%;
+  transition-delay: 0.3s
+}
+
+.hover-9-1 span:nth-child(4) {
+  top: 75%;
+  transition-delay: 0.45s
+}
+
+/* 9-2 */
+.hover-9-2 {
+	transition: color 0.5s;
+}
+
+.hover-9-2:hover {
+	color: white;
+}
+
+.hover-9-2 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #262626;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transform-origin: left;
+}
+
+.hover-9-2:hover span {
+  transform: scaleY(1);
+}
+
+.hover-9-2 span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.15s
+}
+
+.hover-9-2 span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.3s
+}
+
+.hover-9-2 span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.45s
+}
+
+/* 9-3 */
+.hover-9-3 {
+	transition: color 0.5s;
+}
+
+.hover-9-3:hover {
+	color: white;
+}
+
+.hover-9-3 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #262626;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transform-origin: top;
+}
+
+.hover-9-3:hover span {
+  transform: scaleY(1);
+}
+
+.hover-9-3 span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.15s
+}
+
+.hover-9-3 span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.3s
+}
+
+.hover-9-3 span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.45s
+}
+
+/* 9-4 */
+.hover-9-4 {
+	transition: color 0.5s;
+}
+
+.hover-9-4:hover {
+	color: white;
+}
+
+.hover-9-4 span {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: #262626;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: scaleX(0);
+  transition: all 0.5s;
+  transform-origin: left;
+}
+
+.hover-9-4:hover span {
+  transform: scaleX(1);
+}
+
+.hover-9-4 span:nth-child(2) {
+  top: 25%;
+  transition-delay: 0.15s
+}
+
+.hover-9-4 span:nth-child(3) {
+  top: 50%;
+  transition-delay: 0.3s
+}
+
+.hover-9-4 span:nth-child(4) {
+  top: 75%;
+  transition-delay: 0.45s
+}
+
+/**
+* Hover Effect #10 ----------------------------------------------------
+*/
+.hover-10 {
+	transition: color 1s;
+}
+
+.hover-10:hover {
+	color: white;
+}
+
+.hover-10:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background-color: #262626;
+	width: 0;
+	height: 0;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	transform-origin: top;
+	transition: all 1s;
+	z-index: -1;
+}
+
+.hover-10:hover:before {
+	width: 400px;
+	height: 400px;
+}
+
+/**
+* Hover Effect #11 ----------------------------------------------------
+*/
+.hover-11 {
+	overflow: visible;
+}
+
+.hover-11:before {
+  content: "Hover me";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+	transition: all 0.5s;
+	border: 5px solid #262626;
+}
+
+.hover-11:after {
+  content: "Hover me";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  background-color: #2ecc71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: top;
+  transform: rotateX(270deg);
+  transition: all 0.5s;
+	transition-delay: 0.25s;
+	border: 5px solid #262626;
+}
+
+.hover-11:hover:before, .hover-11:hover:after {
+   transform: rotateX(0deg); 
+}
+
+/**
+* Hover Effect #12 ----------------------------------------------------
+*/
+.hover-12 {
+  border: 2px solid #262626;
+  font-weight: 100;
+  transition: all 0.5s;
+  transition-property: border, font-weight, letter-spacing;
+  transition-duration: 1s;
+}
+
+.hover-12:hover {
+  font-weight: 900;
+  letter-spacing: 5px;
+  border: 7px solid #262626;
 }

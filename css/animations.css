@@ -69,7 +69,7 @@
 .animation-3 {
 	background: url(../images/city.jpg);
 	background-position: bottom left;
-  animation: animation3 10s linear infinite;
+  animation: animation3 5s linear infinite;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -99,4 +99,48 @@
 @keyframes animation3 {
 	from { background-position: bottom left; }
 	to { background-position: bottom right; }
+}
+
+/**
+* Animation #4 ----------------------------------------------------
+*/
+.animation-4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #EA2027;
+}
+
+.animation-4 h3 {
+  text-align: center;
+	color: white;
+	font-size: 50px
+}
+
+.animation-4 span:before {
+	content: '';
+	text-transform: uppercase;
+	font-family: arial;
+	color: #1B1464;
+	animation: animation4 5s infinite;
+}
+
+@keyframes animation4 {
+	0% { content: 'programming' }
+	50% { content: 'sports' }
+	100% { content: 'traveling' }
+}
+
+/**
+* Animation #5 ----------------------------------------------------
+*/
+.animation-5  {
+	background: url(../images/pattern.png);
+	background-position: 0 0;
+	animation: animated-pattern 5s linear infinite;
+}
+
+@keyframes animated-pattern {
+	from { background-position: 0 0 }
+	to { background-position: 0 600px }
 }

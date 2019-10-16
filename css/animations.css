@@ -35,6 +35,68 @@
 
 @keyframes animation1 {
 	from { transform: rotate(5deg); }
-
 	to { transform: rotate(-5deg); }
+}
+
+/**
+* Animation #2 ----------------------------------------------------
+*/
+.animation-2 {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  background-color: #26de81;
+  perspective: 200px;
+}
+
+.animation-2 .loading {
+  width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 12px;
+	animation: animation2 2s linear infinite;
+}
+
+@keyframes animation2 {
+	0% { transform: rotateX(0deg) rotateY(0deg); }
+	50% { transform: rotateX(0deg) rotateY(180deg); }
+	100% { transform: rotateX(180deg) rotateY(180deg); }
+}
+
+/**
+* Animation #3 ----------------------------------------------------
+*/
+.animation-3 {
+	background: url(../images/city.jpg);
+	background-position: bottom left;
+  animation: animation3 10s linear infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.animation-3 .car {
+  position: absolute;
+  background: url(../images/car.png);
+	left: 50px;
+  bottom: -35px;
+  width: 125px;
+  height: 125px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.animation-3 .motorbike {
+  position: absolute;
+  background: url(../images/motobike.png);
+	left: 300px;
+  bottom: 30px;
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@keyframes animation3 {
+	from { background-position: bottom left; }
+	to { background-position: bottom right; }
 }

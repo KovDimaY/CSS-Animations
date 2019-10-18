@@ -170,14 +170,14 @@
 	animation: animation6 1.4s linear infinite;
 }
 
-ul li:nth-child(1) { animation-delay: 0 }
-ul li:nth-child(2) { animation-delay: 0.1s }
-ul li:nth-child(3) { animation-delay: 0.2s }
-ul li:nth-child(4) { animation-delay: 0.3s }
-ul li:nth-child(5) { animation-delay: 0.4s }
-ul li:nth-child(6) { animation-delay: 0.5s }
-ul li:nth-child(7) { animation-delay: 0.6s }
-ul li:nth-child(8) { animation-delay: 0.7s }
+.animation-6 ul li:nth-child(1) { animation-delay: 0 }
+.animation-6 ul li:nth-child(2) { animation-delay: 0.1s }
+.animation-6 ul li:nth-child(3) { animation-delay: 0.2s }
+.animation-6 ul li:nth-child(4) { animation-delay: 0.3s }
+.animation-6 ul li:nth-child(5) { animation-delay: 0.4s }
+.animation-6 ul li:nth-child(6) { animation-delay: 0.5s }
+.animation-6 ul li:nth-child(7) { animation-delay: 0.6s }
+.animation-6 ul li:nth-child(8) { animation-delay: 0.7s }
 
 @keyframes animation6 {
 	0% {
@@ -272,4 +272,123 @@ ul li:nth-child(8) { animation-delay: 0.7s }
 @keyframes animation8 {
 	from { background-position: 0 0 }
 	to { background-position: 100% 100% }
+}
+
+/**
+* Animation #9 ----------------------------------------------------
+*/
+.animation-9 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #262626;
+}
+
+.animation-9 ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	border-bottom: solid 10px white;
+}
+
+.animation-9 ul li {
+	list-style: none;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	margin: 0 10px;
+	border-radius: 50%;
+	transform: translateY(-150px);
+	animation: animation9 0.8s linear infinite;
+}
+
+.animation-9 ul li:nth-child(1) { animation-delay: 0.45s; }
+.animation-9 ul li:nth-child(2) { animation-delay: 0.6s; }
+.animation-9 ul li:nth-child(3) { animation-delay: 0.3s; }
+.animation-9 ul li:nth-child(4) { animation-delay: 0; }
+.animation-9 ul li:nth-child(5) { animation-delay: 0.15s; }
+
+@keyframes animation9 {
+	0% { transform: translateY(-150px); }
+	50% { transform: translateY(0); }
+	100% { transform: translateY(-150px); }
+}
+
+/**
+* Animation #10 ----------------------------------------------------
+*/
+.animation-10 {
+	background: url(../images/mansion.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.animation-10 .rain {
+	width: 200%;
+	height: 200%;
+	background: url(../images/rain.png);
+	animation: animation10 .5s linear infinite;
+} 
+
+@keyframes animation10 {
+	0% { background-position: 0% 0%; }
+	100% { background-position: 45% 100%; }
+}
+
+/**
+* Animation #11 ----------------------------------------------------
+*/
+.animation-11 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+	background-color: #262626;
+}
+
+.animation-11 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.animation-11 ul li {
+  list-style-type: none;
+  font-size: 64px;
+  letter-spacing: 20px;
+  animation: animation11 3s linear infinite
+}
+
+.animation-11 ul li:nth-child(1) { animation-delay: 0s; }
+.animation-11 ul li:nth-child(2) { animation-delay: 0.2s; }
+.animation-11 ul li:nth-child(3) { animation-delay: 0.4s; }
+.animation-11 ul li:nth-child(4) { animation-delay: 0.6s; }
+.animation-11 ul li:nth-child(5) { animation-delay: 0.8s; }
+.animation-11 ul li:nth-child(6) { animation-delay: 1s; }
+.animation-11 ul li:nth-child(7) { animation-delay: 1.2s; }
+
+
+@keyframes animation11 {
+	0% {
+    color: yellow;
+    transform: translateX(-50px);
+    letter-spacing: 20px;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    letter-spacing: -20px;
+    opacity: 1;
+  }
+
+  100% {
+    color: lime;
+    transform: translateX(50px);
+    letter-spacing: 20px;
+    opacity: 0;
+  }
 }

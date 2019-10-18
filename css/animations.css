@@ -137,10 +137,139 @@
 .animation-5  {
 	background: url(../images/pattern.png);
 	background-position: 0 0;
-	animation: animated-pattern 5s linear infinite;
+	animation: animation5 5s linear infinite;
 }
 
-@keyframes animated-pattern {
+@keyframes animation5 {
 	from { background-position: 0 0 }
 	to { background-position: 0 600px }
+}
+
+/**
+* Animation #6 ----------------------------------------------------
+*/
+.animation-6  {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lato', sans-serif;
+	background-color: #262626;
+}
+
+.animation-6 ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.animation-6 ul li {
+	list-style: none;
+	color: #484848;
+	font-size: 48px;
+	letter-spacing: 15px;
+	animation: animation6 1.4s linear infinite;
+}
+
+ul li:nth-child(1) { animation-delay: 0 }
+ul li:nth-child(2) { animation-delay: 0.1s }
+ul li:nth-child(3) { animation-delay: 0.2s }
+ul li:nth-child(4) { animation-delay: 0.3s }
+ul li:nth-child(5) { animation-delay: 0.4s }
+ul li:nth-child(6) { animation-delay: 0.5s }
+ul li:nth-child(7) { animation-delay: 0.6s }
+ul li:nth-child(8) { animation-delay: 0.7s }
+
+@keyframes animation6 {
+	0% {
+		color: #484848;
+		text-shadow: none;
+	}
+
+	90% {
+		color: #484848;
+		text-shadow: none;
+	}
+
+	100% {
+		color: #fff900;
+		text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+	}
+}
+
+/**
+* Animation #7 ----------------------------------------------------
+*/
+.animation-7 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lato', sans-serif;
+	background-color: #262626;
+}
+
+.animation-7 .heart {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: #ff3838;
+	transform: rotate(45deg);
+	animation: animation7 1.4s linear infinite;
+}
+
+.animation-7 .heart:before,
+.animation-7 .heart:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ff3838;
+	border-radius: 50%;
+}
+
+.animation-7 .heart:before {
+	transform: translateY(-50%);
+}
+
+.animation-7 .heart:after {
+	transform: translateX(-50%);
+}
+
+@keyframes animation7 {
+	0% { transform: rotate(45deg) scale(1); }
+	25% { transform: rotate(45deg) scale(1); }
+	30% { transform: rotate(45deg) scale(1.4); }
+	50% { transform: rotate(45deg) scale(1.2); }
+	70% { transform: rotate(45deg) scale(1.4); }
+	100% { transform: rotate(45deg) scale(1); }
+}
+
+/**
+* Animation #8 ----------------------------------------------------
+*/
+.animation-8 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lato', sans-serif;
+	background-color: #262626;
+}
+
+.animation-8 h3 {
+	font-size: 72px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	background: url(../images/text-bg.jpg);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: animation8 20s linear infinite;
+}
+
+@keyframes animation8 {
+	from { background-position: 0 0 }
+	to { background-position: 100% 100% }
 }

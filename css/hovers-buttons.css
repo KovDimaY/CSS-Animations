@@ -1,7 +1,3 @@
-body {
-  padding: 25px;
-}
-
 .examples-wrapper {
   display: flex;
 }
@@ -807,7 +803,7 @@ body {
 }
 
 .hover-11:hover:before, .hover-11:hover:after {
-   transform: rotateX(0deg); 
+   transform: rotateX(0deg);
 }
 
 /**

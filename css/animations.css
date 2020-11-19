@@ -1,41 +1,41 @@
 .container {
-	width: 500px;
-	height: 500px;
-	position: relative;
-	overflow: hidden;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
 }
-
 
 /**
 * Animation #1 ----------------------------------------------------
 */
 .animation-1 {
   display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #26de81;
+  justify-content: center;
+  align-items: center;
+  background-color: #26de81;
 }
 
 .animation-1 h3 {
   text-align: center;
-	color: white;
-	font-family: arial;
-	font-size: 90px;
-	line-height: 90px;
-	letter-spacing: 15px;
-	text-shadow: 0 1px 0 #efefef,
-				 0 2px 0 #efefef,
-				 0 3px 0 #efefef,
-				 0 4px 0 #efefef,
-				 0 30px 5px rgba(0,0,0,.1);
+  color: white;
+  font-family: arial;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 15px;
+  text-shadow: 0 1px 0 #efefef, 0 2px 0 #efefef, 0 3px 0 #efefef,
+    0 4px 0 #efefef, 0 30px 5px rgba(0, 0, 0, 0.1);
 
-	animation: animation1 1s linear infinite;
-	animation-direction: alternate;
+  animation: animation1 1s linear infinite;
+  animation-direction: alternate;
 }
 
 @keyframes animation1 {
-	from { transform: rotate(5deg); }
-	to { transform: rotate(-5deg); }
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
 }
 
 /**
@@ -43,32 +43,38 @@
 */
 .animation-2 {
   display: flex;
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #26de81;
   perspective: 200px;
 }
 
 .animation-2 .loading {
   width: 100px;
-	height: 100px;
-	background-color: white;
-	border-radius: 12px;
-	animation: animation2 2s linear infinite;
+  height: 100px;
+  background-color: white;
+  border-radius: 12px;
+  animation: animation2 2s linear infinite;
 }
 
 @keyframes animation2 {
-	0% { transform: rotateX(0deg) rotateY(0deg); }
-	50% { transform: rotateX(0deg) rotateY(180deg); }
-	100% { transform: rotateX(180deg) rotateY(180deg); }
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
 }
 
 /**
 * Animation #3 ----------------------------------------------------
 */
 .animation-3 {
-	background: url(../images/city.jpg);
-	background-position: bottom left;
+  background: url(../images/city.jpg);
+  background-position: bottom left;
   animation: animation3 5s linear infinite;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +83,7 @@
 .animation-3 .car {
   position: absolute;
   background: url(../images/car.png);
-	left: 50px;
+  left: 50px;
   bottom: -35px;
   width: 125px;
   height: 125px;
@@ -88,7 +94,7 @@
 .animation-3 .motorbike {
   position: absolute;
   background: url(../images/motobike.png);
-	left: 300px;
+  left: 300px;
   bottom: 30px;
   width: 90px;
   height: 90px;
@@ -97,253 +103,319 @@
 }
 
 @keyframes animation3 {
-	from { background-position: bottom left; }
-	to { background-position: bottom right; }
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: bottom right;
+  }
 }
 
 /**
 * Animation #4 ----------------------------------------------------
 */
 .animation-4 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #EA2027;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ea2027;
 }
 
 .animation-4 h3 {
   text-align: center;
-	color: white;
-	font-size: 50px
+  color: white;
+  font-size: 50px;
 }
 
 .animation-4 span:before {
-	content: '';
-	text-transform: uppercase;
-	font-family: arial;
-	color: #1B1464;
-	animation: animation4 5s infinite;
+  content: "";
+  text-transform: uppercase;
+  font-family: arial;
+  color: #1b1464;
+  animation: animation4 5s infinite;
 }
 
 @keyframes animation4 {
-	0% { content: 'programming' }
-	50% { content: 'sports' }
-	100% { content: 'traveling' }
+  0% {
+    content: "programming";
+  }
+  50% {
+    content: "sports";
+  }
+  100% {
+    content: "traveling";
+  }
 }
 
 /**
 * Animation #5 ----------------------------------------------------
 */
-.animation-5  {
-	background: url(../images/pattern.png);
-	background-position: 0 0;
-	animation: animation5 5s linear infinite;
+.animation-5 {
+  background: url(../images/pattern.png);
+  background-position: 0 0;
+  animation: animation5 5s linear infinite;
 }
 
 @keyframes animation5 {
-	from { background-position: 0 0 }
-	to { background-position: 0 600px }
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 600px;
+  }
 }
 
 /**
 * Animation #6 ----------------------------------------------------
 */
-.animation-6  {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Lato', sans-serif;
-	background-color: #262626;
+.animation-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  background-color: #262626;
 }
 
 .animation-6 ul {
-	margin: 0;
-	padding: 0;
-	display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .animation-6 ul li {
-	list-style: none;
-	color: #484848;
-	font-size: 48px;
-	letter-spacing: 15px;
-	animation: animation6 1.4s linear infinite;
+  list-style: none;
+  color: #484848;
+  font-size: 48px;
+  letter-spacing: 15px;
+  animation: animation6 1.4s linear infinite;
 }
 
-.animation-6 ul li:nth-child(1) { animation-delay: 0 }
-.animation-6 ul li:nth-child(2) { animation-delay: 0.1s }
-.animation-6 ul li:nth-child(3) { animation-delay: 0.2s }
-.animation-6 ul li:nth-child(4) { animation-delay: 0.3s }
-.animation-6 ul li:nth-child(5) { animation-delay: 0.4s }
-.animation-6 ul li:nth-child(6) { animation-delay: 0.5s }
-.animation-6 ul li:nth-child(7) { animation-delay: 0.6s }
-.animation-6 ul li:nth-child(8) { animation-delay: 0.7s }
+.animation-6 ul li:nth-child(1) {
+  animation-delay: 0;
+}
+.animation-6 ul li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.animation-6 ul li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.animation-6 ul li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.animation-6 ul li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.animation-6 ul li:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.animation-6 ul li:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.animation-6 ul li:nth-child(8) {
+  animation-delay: 0.7s;
+}
 
 @keyframes animation6 {
-	0% {
-		color: #484848;
-		text-shadow: none;
-	}
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
 
-	90% {
-		color: #484848;
-		text-shadow: none;
-	}
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
 
-	100% {
-		color: #fff900;
-		text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
-	}
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+  }
 }
 
 /**
 * Animation #7 ----------------------------------------------------
 */
 .animation-7 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Lato', sans-serif;
-	background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  background-color: #262626;
 }
 
 .animation-7 .heart {
-	position: relative;
-	width: 100px;
-	height: 100px;
-	background-color: #ff3838;
-	transform: rotate(45deg);
-	animation: animation7 1.4s linear infinite;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #ff3838;
+  transform: rotate(45deg);
+  animation: animation7 1.4s linear infinite;
 }
 
 .animation-7 .heart:before,
 .animation-7 .heart:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #ff3838;
-	border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff3838;
+  border-radius: 50%;
 }
 
 .animation-7 .heart:before {
-	transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .animation-7 .heart:after {
-	transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 @keyframes animation7 {
-	0% { transform: rotate(45deg) scale(1); }
-	25% { transform: rotate(45deg) scale(1); }
-	30% { transform: rotate(45deg) scale(1.4); }
-	50% { transform: rotate(45deg) scale(1.2); }
-	70% { transform: rotate(45deg) scale(1.4); }
-	100% { transform: rotate(45deg) scale(1); }
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  25% {
+    transform: rotate(45deg) scale(1);
+  }
+  30% {
+    transform: rotate(45deg) scale(1.4);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(45deg) scale(1.4);
+  }
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
 }
 
 /**
 * Animation #8 ----------------------------------------------------
 */
 .animation-8 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Lato', sans-serif;
-	background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  background-color: #262626;
 }
 
 .animation-8 h3 {
-	font-size: 72px;
-	font-weight: bold;
-	letter-spacing: 10px;
-	text-align: center;
-	text-transform: uppercase;
-	background: url(../images/text-bg.jpg);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-	animation: animation8 20s linear infinite;
+  font-size: 72px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background: url(../images/text-bg.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: animation8 20s linear infinite;
 }
 
 @keyframes animation8 {
-	from { background-position: 0 0 }
-	to { background-position: 100% 100% }
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 
 /**
 * Animation #9 ----------------------------------------------------
 */
 .animation-9 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
 }
 
 .animation-9 ul {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	border-bottom: solid 10px white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-bottom: solid 10px white;
 }
 
 .animation-9 ul li {
-	list-style: none;
-	width: 30px;
-	height: 30px;
-	background-color: white;
-	margin: 0 10px;
-	border-radius: 50%;
-	transform: translateY(-150px);
-	animation: animation9 0.8s linear infinite;
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin: 0 10px;
+  border-radius: 50%;
+  transform: translateY(-150px);
+  animation: animation9 0.8s linear infinite;
 }
 
-.animation-9 ul li:nth-child(1) { animation-delay: 0.45s; }
-.animation-9 ul li:nth-child(2) { animation-delay: 0.6s; }
-.animation-9 ul li:nth-child(3) { animation-delay: 0.3s; }
-.animation-9 ul li:nth-child(4) { animation-delay: 0; }
-.animation-9 ul li:nth-child(5) { animation-delay: 0.15s; }
+.animation-9 ul li:nth-child(1) {
+  animation-delay: 0.45s;
+}
+.animation-9 ul li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.animation-9 ul li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.animation-9 ul li:nth-child(4) {
+  animation-delay: 0;
+}
+.animation-9 ul li:nth-child(5) {
+  animation-delay: 0.15s;
+}
 
 @keyframes animation9 {
-	0% { transform: translateY(-150px); }
-	50% { transform: translateY(0); }
-	100% { transform: translateY(-150px); }
+  0% {
+    transform: translateY(-150px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-150px);
+  }
 }
 
 /**
 * Animation #10 ----------------------------------------------------
 */
 .animation-10 {
-	background: url(../images/mansion.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+  background: url(../images/mansion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .animation-10 .rain {
-	width: 200%;
-	height: 200%;
-	background: url(../images/rain.png);
-	animation: animation10 .5s linear infinite;
-} 
+  width: 200%;
+  height: 200%;
+  background: url(../images/rain.png);
+  animation: animation10 0.5s linear infinite;
+}
 
 @keyframes animation10 {
-	0% { background-position: 0% 0%; }
-	100% { background-position: 45% 100%; }
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 45% 100%;
+  }
 }
 
 /**
 * Animation #11 ----------------------------------------------------
 */
 .animation-11 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: sans-serif;
-	background-color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  background-color: #262626;
 }
 
 .animation-11 ul {
@@ -353,24 +425,37 @@
 }
 
 .animation-11 ul li {
-	list-style-type: none;
-	color: yellow;
+  list-style-type: none;
+  color: yellow;
   font-size: 64px;
   letter-spacing: 20px;
   animation: animation11 3s linear infinite;
 }
 
-.animation-11 ul li:nth-child(1) { animation-delay: 0s; }
-.animation-11 ul li:nth-child(2) { animation-delay: 0.2s; }
-.animation-11 ul li:nth-child(3) { animation-delay: 0.4s; }
-.animation-11 ul li:nth-child(4) { animation-delay: 0.6s; }
-.animation-11 ul li:nth-child(5) { animation-delay: 0.8s; }
-.animation-11 ul li:nth-child(6) { animation-delay: 1s; }
-.animation-11 ul li:nth-child(7) { animation-delay: 1.2s; }
-
+.animation-11 ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+.animation-11 ul li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.animation-11 ul li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.animation-11 ul li:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.animation-11 ul li:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.animation-11 ul li:nth-child(6) {
+  animation-delay: 1s;
+}
+.animation-11 ul li:nth-child(7) {
+  animation-delay: 1.2s;
+}
 
 @keyframes animation11 {
-	0% {
+  0% {
     color: yellow;
     transform: translateX(-50px);
     letter-spacing: 20px;
@@ -398,115 +483,242 @@
 * Animation #12 ----------------------------------------------------
 */
 .animation-12 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
 }
 
 .animation-12 .pulse {
-	position: relative;
-	width: 100px;
-	height: 100px;
-	background: lime;
-	border-radius: 50%;
-	color: #262626;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 42px;
-	font-weight: bold;
-	font-family: sans-serif;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: lime;
+  border-radius: 50%;
+  color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 .animation-12 .pulse:before,
 .animation-12 .pulse:after {
-	content: '';
-	position: absolute;
-	left: -20px;
-	right: -20px;
-	top: -20px;
-	bottom: -20px;
-	border: 1px solid lime;
-	border-radius: 50%;
-	animation: animation12 1.5s linear infinite;
+  content: "";
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border: 1px solid lime;
+  border-radius: 50%;
+  animation: animation12 1.5s linear infinite;
 }
 
 .animation-12 .pulse:after {
-	animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 @keyframes animation12 {
-	0% {
-		transform: scale(0.5);
-		opacity: 0;
-	}
-	60% {
-		transform: scale(1);
-		opacity: 1;
-	}
-	100% {
-		transform: scale(1.2);
-		opacity: 0;
-	}
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }
 
 /**
 * Animation #13 ----------------------------------------------------
 */
 .animation-13 .slider {
-	background-image: url(../images/mansion.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	animation: animation13 15s linear infinite;
+  background-image: url(../images/mansion.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  animation: animation13 15s linear infinite;
 }
 
 @keyframes animation13 {
-	0% { background-image: url(../images/mansion.jpg); }
-	20% { background-image: url(../images/mansion.jpg); }
-	25% { background-image: url(../images/image.png); }
-	45% { background-image: url(../images/image.png); }
-	50% { background-image: url(../images/image2.png); }
-	70% { background-image: url(../images/image2.png); }
-	75% { background-image: url(../images/image3.png); }
-	95% { background-image: url(../images/image3.png); }
-	100% { background-image: url(../images/mansion.jpg); }
+  0% {
+    background-image: url(../images/mansion.jpg);
+  }
+  20% {
+    background-image: url(../images/mansion.jpg);
+  }
+  25% {
+    background-image: url(../images/image.png);
+  }
+  45% {
+    background-image: url(../images/image.png);
+  }
+  50% {
+    background-image: url(../images/image2.png);
+  }
+  70% {
+    background-image: url(../images/image2.png);
+  }
+  75% {
+    background-image: url(../images/image3.png);
+  }
+  95% {
+    background-image: url(../images/image3.png);
+  }
+  100% {
+    background-image: url(../images/mansion.jpg);
+  }
 }
 
 /**
 * Animation #14 ----------------------------------------------------
 */
 .animation-14 .colors {
-	background: #f44336;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: sans-serif;
-	font-size: 64px;
-	text-transform: uppercase;
-	letter-spacing: 16px;
-	animation: animation14 5s linear infinite;
+  background: #f44336;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 64px;
+  text-transform: uppercase;
+  letter-spacing: 16px;
+  animation: animation14 5s linear infinite;
 }
 
 @keyframes animation14 {
-	0% { background: #f44336; }
-	6.25% { background: #e91e63; }
-	12.5% { background: #9c27b0; }
-	18.75% { background: #673ab7; }
-	25% { background: #3f51b5; }
-	31.25% { background: #2196f3; }
-	37.5% { background: #03a9f4; }
-	43.75% { background: #00bcd4; }
-	50% { background: #009688; }
-	56.25% { background: #4caf50; }
-	62.5% { background: #8bc34a; }
-	68.75% { background: #cddc39; }
-	75% { background: #ffeb3b; }
-	81.25% { background: #ffc107; }
-	87.5% { background: #ff9800; }
-	93.75% { background: #ff5722; }
-	100% { background: #f44336; }
+  0% {
+    background: #f44336;
+  }
+  6.25% {
+    background: #e91e63;
+  }
+  12.5% {
+    background: #9c27b0;
+  }
+  18.75% {
+    background: #673ab7;
+  }
+  25% {
+    background: #3f51b5;
+  }
+  31.25% {
+    background: #2196f3;
+  }
+  37.5% {
+    background: #03a9f4;
+  }
+  43.75% {
+    background: #00bcd4;
+  }
+  50% {
+    background: #009688;
+  }
+  56.25% {
+    background: #4caf50;
+  }
+  62.5% {
+    background: #8bc34a;
+  }
+  68.75% {
+    background: #cddc39;
+  }
+  75% {
+    background: #ffeb3b;
+  }
+  81.25% {
+    background: #ffc107;
+  }
+  87.5% {
+    background: #ff9800;
+  }
+  93.75% {
+    background: #ff5722;
+  }
+  100% {
+    background: #f44336;
+  }
+}
+
+/**
+* Animation #15 ----------------------------------------------------
+*/
+.animation-15 {
+  background-color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation-15 .cradle {
+  display: flex;
+  border-top: 10px solid white;
+}
+
+.animation-15 .cradle span {
+  display: block;
+  width: 1px;
+  height: 150px;
+  background-color: white;
+  margin: 0 15px;
+  position: relative;
+  transform-origin: top;
+}
+
+.animation-15 .cradle span:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateX(-50%);
+}
+
+.animation-15 .cradle span:first-child {
+  animation: left-arm 2s ease-in infinite;
+}
+
+.animation-15 .cradle span:last-child {
+  animation: right-arm 2s ease-in infinite 1s;
+}
+
+@keyframes left-arm {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes right-arm {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

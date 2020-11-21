@@ -13,6 +13,13 @@ body {
   min-height: calc(100vh - 190px);
 }
 
+.page-wrapper .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
 @media (max-width: 600px) {
   .page-width {
     padding: 0 10px;

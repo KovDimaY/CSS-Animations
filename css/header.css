@@ -1,0 +1,75 @@
+.header {
+  background-color: #333333;
+}
+
+.header .header-content {
+  box-sizing: border-box;
+  min-height: 45px;
+  padding: 10px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.header .header-title {
+  position: absolute;
+  left: 0;
+  font-family: Raleway;
+  font-style: normal;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header .header-title .css {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.08em;
+}
+
+.header .header-title .animation {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.header .header-text {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.header .header-info {
+  position: absolute;
+  right: 0;
+  font-family: Raleway;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.header .header-info .header-info-icon {
+  fill: #ffffff;
+  margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+  .header .header-content {
+    padding: 0;
+  }
+
+  .header .header-text {
+    display: none;
+  }
+
+  .header .header-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .header .header-title .css {
+    margin-right: 10px;
+  }
+}

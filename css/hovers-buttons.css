@@ -1,34 +1,55 @@
 .examples-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+  width: 100%;
+  min-height: 200px;
+  padding: 25px 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .example-item {
   list-style: none;
-  margin: 0 10px;
+  margin: 10px;
 }
 
 .button {
   display: block;
-  text-decoration: none;
-  color: #262626;
-  font-family: sans-serif;
-  font-size: 32px;
-  border: 5px solid #262626;
-  padding: 25px 50px;
+  padding: 20px 40px;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  border: 2px solid #bdbdbd;
+  border-radius: 8px;
+  color: #bdbdbd;
+  font-family: Raleway;
+  font-size: 24px;
   cursor: pointer;
+  z-index: 100;
 }
 
 /**
 * Hover Effect #1 ----------------------------------------------------
 */
+.hover-1-1 {
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
+}
+
+.hover-1-1:hover {
+  color: #333333;
+  border-color: #333333;
+}
+
 .hover-1-1:before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #fff200;
+  background-color: #f57c1f;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -42,13 +63,22 @@
 }
 
 /* 1-2 */
+.hover-1-2 {
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
+}
+
+.hover-1-2:hover {
+  color: #333333;
+  border-color: #333333;
+}
 
 .hover-1-2:before {
   content: "";
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: #fff200;
+  background-color: #f57c1f;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -65,11 +95,13 @@
 * Hover Effect #2 ----------------------------------------------------
 */
 .hover-2-1 {
-  transition: color 0.5s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-2-1:hover {
-  color: white;
+  color: #333333;
+  border-color: #333333;
 }
 
 .hover-2-1:before {
@@ -79,9 +111,9 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #351435;
+  background-color: #f57c1f;
   z-index: -1;
-  transform: translateX(-100%);
+  transform: translateX(-101%);
   transition: all 0.5s;
 }
 
@@ -90,13 +122,14 @@
 }
 
 /* 2-2 */
-
 .hover-2-2 {
-  transition: color 0.5s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-2-2:hover {
-  color: white;
+  color: #333333;
+  border-color: #333333;
 }
 
 .hover-2-2:before {
@@ -106,9 +139,9 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #351435;
+  background-color: #f57c1f;
   z-index: -1;
-  transform: translateX(100%);
+  transform: translateX(101%);
   transition: all 0.5s;
 }
 
@@ -117,13 +150,14 @@
 }
 
 /* 2-3 */
-
 .hover-2-3 {
-  transition: color 0.5s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-2-3:hover {
-  color: white;
+  color: #333333;
+  border-color: #333333;
 }
 
 .hover-2-3:before {
@@ -133,9 +167,9 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #351435;
+  background-color: #f57c1f;
   z-index: -1;
-  transform: translateY(-100%);
+  transform: translateY(-101%);
   transition: all 0.5s;
 }
 
@@ -144,13 +178,14 @@
 }
 
 /* 2-4 */
-
 .hover-2-4 {
-  transition: color 0.5s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-2-4:hover {
-  color: white;
+  color: #333333;
+  border-color: #333333;
 }
 
 .hover-2-4:before {
@@ -160,9 +195,9 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #351435;
+  background-color: #f57c1f;
   z-index: -1;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: all 0.5s;
 }
 
@@ -174,11 +209,13 @@
 * Hover Effect #3 ----------------------------------------------------
 */
 .hover-3 {
-  transition: color 0.5s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-3:hover {
-  color: white;
+  color: #333333;
+  border-color: #333333;
 }
 
 .hover-3:before {
@@ -188,7 +225,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #262626;
+  background-color: #f57c1f;
   transition: 0.5s;
   transform: rotateX(90deg);
   z-index: -1;
@@ -201,7 +238,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #262626;
+  background-color: #f57c1f;
   transition: 0.5s;
   transform: rotateY(90deg);
   z-index: -1;
@@ -219,9 +256,13 @@
 * Hover Effect #4 ----------------------------------------------------
 */
 .hover-4 {
-  overflow: visible;
-  background: #363636;
+  transition: border-color 0.5s;
+  background: #f57c1f;
   color: transparent;
+}
+
+.hover-4:hover {
+  border-color: #333333;
 }
 
 .hover-4:before {
@@ -231,8 +272,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
-  color: #363636;
+  background-color: #fafafa;
+  color: #bdbdbd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,8 +293,8 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: white;
-  color: #363636;
+  background-color: #fafafa;
+  color: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,6 +312,14 @@
 /**
 * Hover Effect #5 ----------------------------------------------------
 */
+.hover-5-1 {
+  transition: border-color 0.5s;
+}
+
+.hover-5-1:hover {
+  border-color: #333333;
+}
+
 .hover-5-1:before {
   content: "YEAH!";
   position: absolute;
@@ -281,8 +330,9 @@
   top: 0;
   height: 100%;
   width: 100%;
-  color: white;
-  background-color: #f44336;
+  color: #333333;
+  font-weight: 600;
+  background-color: #f57c1f;
   transform: translateX(-100%);
   transition: all 0.5s;
 }
@@ -292,6 +342,13 @@
 }
 
 /* 5-2 */
+.hover-5-2 {
+  transition: border-color 0.5s;
+}
+
+.hover-5-2:hover {
+  border-color: #333333;
+}
 
 .hover-5-2:before {
   content: "YEAH!";
@@ -303,8 +360,9 @@
   top: 0;
   height: 100%;
   width: 100%;
-  color: white;
-  background-color: #f44336;
+  color: #333333;
+  font-weight: 600;
+  background-color: #f57c1f;
   transform: translateX(100%);
   transition: all 0.5s;
 }
@@ -314,6 +372,13 @@
 }
 
 /* 5-3 */
+.hover-5-3 {
+  transition: border-color 0.5s;
+}
+
+.hover-5-3:hover {
+  border-color: #333333;
+}
 
 .hover-5-3:before {
   content: "YEAH!";
@@ -325,8 +390,9 @@
   top: 0;
   height: 100%;
   width: 100%;
-  color: white;
-  background-color: #f44336;
+  color: #333333;
+  font-weight: 600;
+  background-color: #f57c1f;
   transform: translateY(-100%);
   transition: all 0.5s;
 }
@@ -336,6 +402,13 @@
 }
 
 /* 5-4 */
+.hover-5-4 {
+  transition: border-color 0.5s;
+}
+
+.hover-5-4:hover {
+  border-color: #333333;
+}
 
 .hover-5-4:before {
   content: "YEAH!";
@@ -347,30 +420,9 @@
   top: 0;
   height: 100%;
   width: 100%;
-  color: white;
-  background-color: #f44336;
-  transform: translateY(100%);
-  transition: all 0.5s;
-}
-
-.hover-5-4:hover:before {
-  transform: translateY(0);
-}
-
-/* 5-4 */
-
-.hover-5-4:before {
-  content: "YEAH!";
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  color: white;
-  background-color: #f44336;
+  color: #333333;
+  font-weight: 600;
+  background-color: #f57c1f;
   transform: translateY(100%);
   transition: all 0.5s;
 }
@@ -383,13 +435,14 @@
 * Hover Effect #6 ----------------------------------------------------
 */
 .hover-6-1 {
-  transition-property: color, background-color;
+  transition-property: color, background-color, border-color;
   transition-duration: 0.5s;
 }
 
 .hover-6-1:hover {
-  color: white;
-  background-color: #00b300;
+  color: #333333;
+  border-color: #333333;
+  background-color: #f57c1f;
 }
 
 .hover-6-1:before {
@@ -409,15 +462,15 @@
 }
 
 /* 6-2 */
-
 .hover-6-2 {
-  transition-property: color, background-color;
+  transition-property: color, background-color, border-color;
   transition-duration: 0.5s;
 }
 
 .hover-6-2:hover {
-  color: white;
-  background-color: #00b300;
+  color: #333333;
+  border-color: #333333;
+  background-color: #f57c1f;
 }
 
 .hover-6-2:before {
@@ -440,8 +493,14 @@
 * Hover Effect #7 ----------------------------------------------------
 */
 .hover-7-1 {
-  background-color: #262626;
+  background-color: #f57c1f;
   color: transparent;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
+}
+
+.hover-7-1:hover {
+  border-color: #333333;
 }
 
 .hover-7-1:before {
@@ -451,8 +510,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: white;
-  color: #262626;
+  background-color: #fafafa;
+  color: #bdbdbd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -466,8 +525,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: white;
-  color: #262626;
+  background-color: #fafafa;
+  color: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -484,10 +543,15 @@
 }
 
 /* 7-2 */
-
 .hover-7-2 {
-  background-color: #262626;
+  background-color: #f57c1f;
   color: transparent;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
+}
+
+.hover-7-2:hover {
+  border-color: #333333;
 }
 
 .hover-7-2:before {
@@ -497,8 +561,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: white;
-  color: #262626;
+  background-color: #fafafa;
+  color: #bdbdbd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -512,8 +576,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: white;
-  color: #262626;
+  background-color: #fafafa;
+  color: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -533,11 +597,13 @@
 * Hover Effect #8 ----------------------------------------------------
 */
 .hover-8 {
-  transition: color 0.25s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-8:hover {
   color: transparent;
+  border-color: #333333;
 }
 
 .hover-8:before {
@@ -547,8 +613,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #262626;
-  color: white;
+  background-color: #f57c1f;
+  color: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -566,18 +632,20 @@
 * Hover Effect #9 ----------------------------------------------------
 */
 .hover-9-1 {
-  transition: color 0.5s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-9-1:hover {
-  color: white;
+  color: #333333;
+  border-color: #333333;
 }
 
 .hover-9-1 span {
   position: absolute;
   width: 100%;
-  height: 25%;
-  background-color: #262626;
+  height: 27%;
+  background-color: #f57c1f;
   z-index: -1;
   left: 0;
   top: 0;
@@ -607,18 +675,20 @@
 
 /* 9-2 */
 .hover-9-2 {
-  transition: color 0.5s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-9-2:hover {
-  color: white;
+  color: #333333;
+  border-color: #333333;
 }
 
 .hover-9-2 span {
   position: absolute;
-  width: 25%;
+  width: 27%;
   height: 100%;
-  background-color: #262626;
+  background-color: #f57c1f;
   z-index: -1;
   left: 0;
   top: 0;
@@ -648,18 +718,20 @@
 
 /* 9-3 */
 .hover-9-3 {
-  transition: color 0.5s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-9-3:hover {
-  color: white;
+  color: #333333;
+  border-color: #333333;
 }
 
 .hover-9-3 span {
   position: absolute;
-  width: 25%;
+  width: 27%;
   height: 100%;
-  background-color: #262626;
+  background-color: #f57c1f;
   z-index: -1;
   left: 0;
   top: 0;
@@ -689,18 +761,20 @@
 
 /* 9-4 */
 .hover-9-4 {
-  transition: color 0.5s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-9-4:hover {
-  color: white;
+  color: #333333;
+  border-color: #333333;
 }
 
 .hover-9-4 span {
   position: absolute;
   width: 100%;
-  height: 25%;
-  background-color: #262626;
+  height: 27%;
+  background-color: #f57c1f;
   z-index: -1;
   left: 0;
   top: 0;
@@ -732,11 +806,13 @@
 * Hover Effect #10 ----------------------------------------------------
 */
 .hover-10 {
-  transition: color 1s;
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
 .hover-10:hover {
-  color: white;
+  color: #333333;
+  border-color: #333333;
 }
 
 .hover-10:before {
@@ -744,9 +820,9 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  background-color: #262626;
-  width: 0;
-  height: 0;
+  background-color: #f57c1f;
+  width: -0;
+  height: -0;
   border-radius: 100%;
   transform: translate(-50%, -50%);
   transform-origin: top;
@@ -767,38 +843,42 @@
 }
 
 .hover-11:before {
-  content: "Hover me";
+  content: "Ready?";
   position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 100%;
-  height: 100%;
-  background-color: yellow;
+  top: -2px;
+  left: -2px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotateX(270deg);
+  width: 100%;
+  height: 100%;
+  color: #666666;
+  background-color: #fac69e;
+  border: 2px solid #666666;
+  border-radius: 8px;
   transform-origin: top;
+  transform: rotateX(270deg);
   transition: all 0.5s;
-  border: 5px solid #262626;
 }
 
 .hover-11:after {
-  content: "Hover me";
+  content: "GOOOO!!!";
   position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 100%;
-  height: 100%;
-  background-color: #2ecc71;
+  top: -2px;
+  left: -2px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #333333;
+  background-color: #f57c1f;
+  border: 2px solid #333333;
+  border-radius: 8px;
   transform-origin: top;
   transform: rotateX(270deg);
   transition: all 0.5s;
   transition-delay: 0.25s;
-  border: 5px solid #262626;
 }
 
 .hover-11:hover:before,
@@ -810,15 +890,14 @@
 * Hover Effect #12 ----------------------------------------------------
 */
 .hover-12 {
-  border: 2px solid #262626;
-  font-weight: 100;
   transition: all 0.5s;
-  transition-property: border, font-weight, letter-spacing;
+  transition-property: color, border, font-weight, letter-spacing;
   transition-duration: 1s;
 }
 
 .hover-12:hover {
   font-weight: 900;
   letter-spacing: 5px;
-  border: 7px solid #262626;
+  color: #333333;
+  border: 7px solid #333333;
 }

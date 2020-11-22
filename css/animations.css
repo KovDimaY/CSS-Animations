@@ -3,6 +3,21 @@
   height: 500px;
   position: relative;
   overflow: hidden;
+  margin: auto;
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /**
@@ -12,13 +27,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #26de81;
+  background-color: #f57c1f;
 }
 
-.animation-1 h3 {
+.animation-1 > h1 {
   text-align: center;
   color: white;
-  font-family: arial;
+  font-family: "Raleway";
   font-size: 90px;
   line-height: 90px;
   letter-spacing: 15px;
@@ -38,6 +53,24 @@
   }
 }
 
+@media (max-width: 992px) {
+  .animation-1 > h1 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 600;
+    letter-spacing: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-1 > h1 {
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+}
+
 /**
 * Animation #2 ----------------------------------------------------
 */
@@ -45,7 +78,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #26de81;
+  background-color: #f57c1f;
   perspective: 200px;
 }
 
@@ -66,6 +99,16 @@
   }
   100% {
     transform: rotateX(180deg) rotateY(180deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-2 .loading {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 12px;
+    animation: animation2 2s linear infinite;
   }
 }
 
@@ -111,6 +154,36 @@
   }
 }
 
+@media (max-width: 992px) {
+  .animation-3 .car {
+    left: 40px;
+    bottom: -15px;
+    width: 75px;
+    height: 75px;
+  }
+  .animation-3 .motorbike {
+    left: 200px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-3 .car {
+    left: 25px;
+    bottom: -13px;
+    width: 50px;
+    height: 50px;
+  }
+  .animation-3 .motorbike {
+    left: 135px;
+    bottom: 11px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
 /**
 * Animation #4 ----------------------------------------------------
 */
@@ -118,12 +191,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ea2027;
+  background-color: #f57c1f;
 }
 
-.animation-4 h3 {
+.animation-4 > h1 {
   text-align: center;
-  color: white;
+  color: #ffffff;
+  font-family: "Raleway";
   font-size: 50px;
 }
 
@@ -131,7 +205,7 @@
   content: "";
   text-transform: uppercase;
   font-family: arial;
-  color: #1b1464;
+  color: #333333;
   animation: animation4 5s infinite;
 }
 
@@ -147,12 +221,25 @@
   }
 }
 
+@media (max-width: 992px) {
+  .animation-4 > h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-4 > h1 {
+    font-size: 22px;
+  }
+}
+
 /**
 * Animation #5 ----------------------------------------------------
 */
 .animation-5 {
   background: url(../images/pattern.png);
   background-position: 0 0;
+  background-size: cover;
   animation: animation5 5s linear infinite;
 }
 
@@ -173,45 +260,46 @@
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
-  background-color: #262626;
+  background-color: #333333;
 }
 
-.animation-6 ul {
+.animation-6 .text-wrapper {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.animation-6 ul li {
+.animation-6 .text-wrapper > li {
   list-style: none;
   color: #484848;
   font-size: 48px;
   letter-spacing: 15px;
+  font-family: "Raleway";
   animation: animation6 1.4s linear infinite;
 }
 
-.animation-6 ul li:nth-child(1) {
-  animation-delay: 0;
+.animation-6 .text-wrapper > li:nth-child(1) {
+  animation-delay: 0s;
 }
-.animation-6 ul li:nth-child(2) {
+.animation-6 .text-wrapper > li:nth-child(2) {
   animation-delay: 0.1s;
 }
-.animation-6 ul li:nth-child(3) {
+.animation-6 .text-wrapper > li:nth-child(3) {
   animation-delay: 0.2s;
 }
-.animation-6 ul li:nth-child(4) {
+.animation-6 .text-wrapper > li:nth-child(4) {
   animation-delay: 0.3s;
 }
-.animation-6 ul li:nth-child(5) {
+.animation-6 .text-wrapper > li:nth-child(5) {
   animation-delay: 0.4s;
 }
-.animation-6 ul li:nth-child(6) {
+.animation-6 .text-wrapper > li:nth-child(6) {
   animation-delay: 0.5s;
 }
-.animation-6 ul li:nth-child(7) {
+.animation-6 .text-wrapper > li:nth-child(7) {
   animation-delay: 0.6s;
 }
-.animation-6 ul li:nth-child(8) {
+.animation-6 .text-wrapper > li:nth-child(8) {
   animation-delay: 0.7s;
 }
 
@@ -232,6 +320,20 @@
   }
 }
 
+@media (max-width: 992px) {
+  .animation-6 .text-wrapper > li {
+    font-size: 32px;
+    letter-spacing: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-6 .text-wrapper > li {
+    font-size: 22px;
+    letter-spacing: 5px;
+  }
+}
+
 /**
 * Animation #7 ----------------------------------------------------
 */
@@ -240,7 +342,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
-  background-color: #262626;
+  background-color: #333333;
 }
 
 .animation-7 .heart {
@@ -293,6 +395,20 @@
   }
 }
 
+@media (max-width: 992px) {
+  .animation-7 .heart {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-7 .heart {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /**
 * Animation #8 ----------------------------------------------------
 */
@@ -301,16 +417,18 @@
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
-  background-color: #262626;
+  background-color: #333333;
 }
 
-.animation-8 h3 {
+.animation-8 > h1 {
   font-size: 72px;
   font-weight: bold;
+  font-family: "Raleway";
   letter-spacing: 10px;
   text-align: center;
   text-transform: uppercase;
   background: url(../images/text-bg.jpg);
+  background-size: contain;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -326,6 +444,20 @@
   }
 }
 
+@media (max-width: 992px) {
+  .animation-8 > h1 {
+    font-size: 36px;
+    letter-spacing: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-8 > h1 {
+    font-size: 22px;
+    letter-spacing: 5px;
+  }
+}
+
 /**
 * Animation #9 ----------------------------------------------------
 */
@@ -333,52 +465,72 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #262626;
+  background-color: #333333;
 }
 
-.animation-9 ul {
-  margin: 0;
+.animation-9 .dots-container {
+  margin: 0 0 -25% 0;
   padding: 0;
   display: flex;
   border-bottom: solid 10px white;
 }
 
-.animation-9 ul li {
+.animation-9 .dots-container > li {
   list-style: none;
   width: 30px;
   height: 30px;
   background-color: white;
   margin: 0 10px;
   border-radius: 50%;
-  transform: translateY(-150px);
+  transform: translateY(-500%);
   animation: animation9 0.8s linear infinite;
 }
 
-.animation-9 ul li:nth-child(1) {
+.animation-9 .dots-container > li:nth-child(1) {
   animation-delay: 0.45s;
 }
-.animation-9 ul li:nth-child(2) {
+.animation-9 .dots-container > li:nth-child(2) {
   animation-delay: 0.6s;
 }
-.animation-9 ul li:nth-child(3) {
+.animation-9 .dots-container > li:nth-child(3) {
   animation-delay: 0.3s;
 }
-.animation-9 ul li:nth-child(4) {
+.animation-9 .dots-container > li:nth-child(4) {
   animation-delay: 0;
 }
-.animation-9 ul li:nth-child(5) {
+.animation-9 .dots-container > li:nth-child(5) {
   animation-delay: 0.15s;
 }
 
 @keyframes animation9 {
   0% {
-    transform: translateY(-150px);
+    transform: translateY(-500%);
   }
   50% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-150px);
+    transform: translateY(-500%);
+  }
+}
+
+@media (max-width: 992px) {
+  .animation-9 .dots-container > li {
+    width: 20px;
+    height: 20px;
+    margin: 0 7px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-9 .dots-container {
+    border-bottom-width: 5px;
+  }
+
+  .animation-9 .dots-container > li {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
   }
 }
 
@@ -407,6 +559,20 @@
   }
 }
 
+@media (max-width: 992px) {
+  .animation-10 .rain {
+    width: 350%;
+    height: 350%;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-10 .rain {
+    width: 500%;
+    height: 500%;
+  }
+}
+
 /**
 * Animation #11 ----------------------------------------------------
 */
@@ -415,49 +581,50 @@
   align-items: center;
   justify-content: center;
   font-family: sans-serif;
-  background-color: #262626;
+  background-color: #333333;
 }
 
-.animation-11 ul {
+.animation-11 .text-container {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.animation-11 ul li {
+.animation-11 .text-container > li {
   list-style-type: none;
   color: yellow;
+  font-family: "Raleway";
   font-size: 64px;
   letter-spacing: 20px;
   animation: animation11 3s linear infinite;
 }
 
-.animation-11 ul li:nth-child(1) {
+.animation-11 .text-container > li:nth-child(1) {
   animation-delay: 0s;
 }
-.animation-11 ul li:nth-child(2) {
+.animation-11 .text-container > li:nth-child(2) {
   animation-delay: 0.2s;
 }
-.animation-11 ul li:nth-child(3) {
+.animation-11 .text-container > li:nth-child(3) {
   animation-delay: 0.4s;
 }
-.animation-11 ul li:nth-child(4) {
+.animation-11 .text-container > li:nth-child(4) {
   animation-delay: 0.6s;
 }
-.animation-11 ul li:nth-child(5) {
+.animation-11 .text-container > li:nth-child(5) {
   animation-delay: 0.8s;
 }
-.animation-11 ul li:nth-child(6) {
+.animation-11 .text-container > li:nth-child(6) {
   animation-delay: 1s;
 }
-.animation-11 ul li:nth-child(7) {
+.animation-11 .text-container > li:nth-child(7) {
   animation-delay: 1.2s;
 }
 
 @keyframes animation11 {
   0% {
     color: yellow;
-    transform: translateX(-50px);
+    transform: translateX(-50%);
     letter-spacing: 20px;
     opacity: 0;
   }
@@ -473,9 +640,23 @@
 
   100% {
     color: lime;
-    transform: translateX(50px);
+    transform: translateX(50%);
     letter-spacing: 20px;
     opacity: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .animation-11 .text-container > li {
+    font-size: 36px;
+    height: 350%;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-11 .text-container > li {
+    font-size: 22px;
+    height: 500%;
   }
 }
 
@@ -486,16 +667,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #262626;
+  background-color: #333333;
 }
 
 .animation-12 .pulse {
   position: relative;
   width: 100px;
   height: 100px;
-  background: lime;
+  background: #f57c1f;
   border-radius: 50%;
-  color: #262626;
+  color: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -512,7 +693,7 @@
   right: -20px;
   top: -20px;
   bottom: -20px;
-  border: 1px solid lime;
+  border: 1px solid #f57c1f;
   border-radius: 50%;
   animation: animation12 1.5s linear infinite;
 }
@@ -533,6 +714,22 @@
   100% {
     transform: scale(1.2);
     opacity: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .animation-12 .pulse {
+    width: 75px;
+    height: 75px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-12 .pulse {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
   }
 }
 
@@ -582,15 +779,16 @@
 * Animation #14 ----------------------------------------------------
 */
 .animation-14 .colors {
-  background: #f44336;
+  background-color: #f44336;
+  color: #333333;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: sans-serif;
+  font-family: "Raleway";
   font-size: 64px;
-  text-transform: uppercase;
   letter-spacing: 16px;
+  text-transform: uppercase;
   animation: animation14 5s linear infinite;
 }
 
@@ -648,11 +846,25 @@
   }
 }
 
+@media (max-width: 992px) {
+  .animation-14 .colors {
+    font-size: 36px;
+    letter-spacing: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-14 .colors {
+    font-size: 22px;
+    letter-spacing: 5px;
+  }
+}
+
 /**
 * Animation #15 ----------------------------------------------------
 */
 .animation-15 {
-  background-color: #262626;
+  background-color: #333333;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -663,7 +875,7 @@
   border-top: 10px solid white;
 }
 
-.animation-15 .cradle span {
+.animation-15 .cradle > span {
   display: block;
   width: 1px;
   height: 150px;
@@ -673,7 +885,7 @@
   transform-origin: top;
 }
 
-.animation-15 .cradle span:before {
+.animation-15 .cradle > span:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -685,11 +897,11 @@
   transform: translateX(-50%);
 }
 
-.animation-15 .cradle span:first-child {
+.animation-15 .cradle > span:first-child {
   animation: left-arm 2s ease-in infinite;
 }
 
-.animation-15 .cradle span:last-child {
+.animation-15 .cradle > span:last-child {
   animation: right-arm 2s ease-in infinite 1s;
 }
 
@@ -720,5 +932,34 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 992px) {
+  .animation-15 .cradle {
+    display: flex;
+    border-top: 10px solid white;
+  }
+  .animation-15 .cradle > span {
+    height: 100px;
+    margin: 0 10px;
+  }
+  .animation-15 .cradle > span:before {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-15 .cradle {
+    border-top-width: 5px;
+  }
+  .animation-15 .cradle > span {
+    height: 75px;
+    margin: 0 7px;
+  }
+  .animation-15 .cradle > span:before {
+    width: 15px;
+    height: 15px;
   }
 }

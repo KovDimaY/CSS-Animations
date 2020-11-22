@@ -20,6 +20,11 @@ body {
   margin: 25px 0;
 }
 
+.content .background {
+  background-color: #fafafa;
+  padding: 50px 25px;
+}
+
 .content .effect-wrapper {
   width: 100%;
   margin-bottom: 25px;

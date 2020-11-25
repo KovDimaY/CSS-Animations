@@ -57,7 +57,7 @@ body {
   margin: 0 0 50px 0;
   font-family: Raleway;
   color: #f57c1f;
-  text-shadow: -5px 5px 5px #333333;
+  text-shadow: -1px 3px 10px #333333;
   font-size: 125px;
   text-align: center;
   animation: title 3s ease-in-out;
@@ -82,7 +82,7 @@ body {
   font-family: Raleway;
   text-decoration: none;
   font-size: 24px;
-  animation: button 3s 3s ease-in-out;
+  animation: button 2s 2s ease-in-out;
   animation-fill-mode: forwards;
   transition: transform 1s !important;
 }

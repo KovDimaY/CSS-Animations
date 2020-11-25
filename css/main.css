@@ -38,12 +38,139 @@ body {
   color: #4f4f4f;
 }
 
+.home-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-page-content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.main-page-content .title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 50px 0;
+  font-family: Raleway;
+  color: #f57c1f;
+  text-shadow: -5px 5px 5px #333333;
+  font-size: 125px;
+  text-align: center;
+  animation: title 3s ease-in-out;
+}
+
+.main-page-content .title .css {
+  letter-spacing: 2vw;
+  font-weight: 900;
+  font-size: 200px;
+}
+
+.main-page-content .button {
+  opacity: 0;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333333;
+  padding: 25px 40px;
+  font-family: Raleway;
+  text-decoration: none;
+  font-size: 24px;
+  animation: button 3s 3s ease-in-out;
+  animation-fill-mode: forwards;
+  transition: transform 1s !important;
+}
+
+.main-page-content .button > span {
+  position: absolute;
+  width: 34%;
+  height: 100%;
+  background-color: #fafafa;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 33%);
+  transition: 1s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.main-page-content .button:hover {
+  transform: scale(1.1) !important;
+}
+
+.main-page-content .button:hover > span {
+  transform: translateY(0) scale(2);
+}
+
+.main-page-content .button > span:nth-child(1) {
+  --n: 1;
+}
+
+.main-page-content .button > span:nth-child(2) {
+  --n: 2;
+}
+
+.main-page-content .button > span:nth-child(3) {
+  --n: 3;
+}
+
+@keyframes title {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes button {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-page-content .title {
+    font-size: 75px;
+  }
+  .main-page-content .title .css {
+    font-size: 150px;
+  }
+}
+
 @media (max-width: 600px) {
   .page-width {
     padding: 0 10px;
   }
-
   .page-height {
     min-height: calc(100vh - 160px);
+  }
+  .main-page-content .title {
+    font-size: 45px;
+  }
+  .main-page-content .title .css {
+    font-size: 90px;
+  }
+  .main-page-content .button {
+    font-size: 18px;
+    padding: 20px 30px;
   }
 }

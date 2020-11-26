@@ -333,7 +333,7 @@
   color: #333333;
   font-weight: 600;
   background-color: #f57c1f;
-  transform: translateX(-100%);
+  transform: translateX(-101%);
   transition: all 0.5s;
 }
 
@@ -363,7 +363,7 @@
   color: #333333;
   font-weight: 600;
   background-color: #f57c1f;
-  transform: translateX(100%);
+  transform: translateX(101%);
   transition: all 0.5s;
 }
 
@@ -393,7 +393,7 @@
   color: #333333;
   font-weight: 600;
   background-color: #f57c1f;
-  transform: translateY(-100%);
+  transform: translateY(-101%);
   transition: all 0.5s;
 }
 
@@ -423,7 +423,7 @@
   color: #333333;
   font-weight: 600;
   background-color: #f57c1f;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: all 0.5s;
 }
 

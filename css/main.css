@@ -7,10 +7,11 @@ body {
   max-width: 992px;
   margin: auto;
   padding: 0 25px;
+  box-sizing: border-box;
 }
 
 .page-height {
-  min-height: calc(100vh - 190px);
+  min-height: calc(100vh - 170px);
 }
 
 .page-wrapper .content {

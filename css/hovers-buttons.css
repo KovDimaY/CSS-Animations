@@ -902,3 +902,74 @@
   color: #333333;
   border: 7px solid #333333;
 }
+
+/**
+* Hover Effect #13 ----------------------------------------------------
+*/
+.hover-13 {
+  overflow: visible;
+}
+
+.hover-13:before,
+.hover-13:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #f57c1f;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  z-index: -1;
+  opacity: 0;
+}
+
+.hover-13:before {
+  left: 0;
+  box-shadow: -100px 0 0 #f57c1f;
+}
+
+.hover-13:after {
+  right: 0;
+  box-shadow: 100px 0 0 #f57c1f;
+}
+
+.hover-13:hover:before {
+  left: 50%;
+  box-shadow: 30px 0 0 #f57c1f;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+}
+
+.hover-13:hover:after {
+  right: 50%;
+  box-shadow: -30px 0 0 #f57c1f;
+  transform: translateX(50%) translateY(-50%);
+  opacity: 1;
+}
+
+.hover-13 > span {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  background-color: #f57c1f;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  color: #333333;
+  transform: scale(0);
+  transition: all 0.25s;
+  z-index: -1;
+}
+
+.hover-13:hover > span {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}
+
+.hover-13:hover {
+  color: #333333;
+  transition-delay: 0.25s;
+}

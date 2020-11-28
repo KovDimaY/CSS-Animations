@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/navigation.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/info.css" />
+    <link rel="stylesheet" href="../css/hovers-buttons.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900"
@@ -53,12 +54,39 @@
 
     <main class="info-page-wrapper page-width page-height">
       <h1 class="title">CSS Animations</h1>
-      <p class="text">This is a collection of interesting and beautiful CSS animations that I started collecting after taking a course from Udemy.</p>
-      <p class="text">You can see the current result here: https://example.com</p>
+      <p class="text">This is a collection of nice and interesting CSS animations and hover effects that I started collecting after taking a course from Udemy.</p>
       <p class="text">
-        The idea is to keep the effects in a way when it is easy to reuse them in a different place.
-        By this I mean to be able just copy-paste the HTML and CSS from this project and it magically works in a new project.
-        Or even if it requires some changes - they are super minor.
+        The idea of this website is to keep all the effects in one place and in a way that it is easy to get the code and reuse it in a different place.
+        This is why you see this structure of each page, where each type of animation or effect goes one after another in a clear order and with a clear naming, so
+        everyone is able to just copy-paste the HTML and corresponding CSS from this project and it magically works in another project too.
+        And even if it requires some changes of the CSS - they are super minor and simple.
+      </p>
+      <p class="text">
+        For example, imagine you see this effect on the "Hover Buttons" page and you want to add it into your project:
+      </p>
+
+      <div class="content">
+        <section class="effect-wrapper">
+          <h3 class="effect-title">Hover Effect 12</h3>
+  
+          <ul class="examples-wrapper">
+            <li class="example-item">
+              <button class="button hover-12"> Hover me </button>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <p class="text">
+        Then you just need to find the corresponding html in the <span class="code">pages/hovers-buttons.html</span> file,
+        corresponding css in the <span class="code">css/hovers-buttons.css</span> and copy them to your project. In this case they will look like this:
+      </p>
+      
+      <img class="code-example-image" src="../images/code-example.jpg">
+
+      <p class="text">
+        The code that needs to be copied is only the code of the button (<span class="code">&lt;button class=&quot;button hover-12&quot;&gt; Hover me &lt;/button&gt;</span>)
+        and the whole code for the css in the section. With this, effect should start magically working in your project too.
       </p>
       <p class="text">
         I want to collect here as many interesting effects as possible so if you know some - you are welcome to contribute.

@@ -1,5 +1,13 @@
 .info-page-wrapper {
-  padding-top: 45px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.info-page-wrapper .content {
+  border: 1px solid #fafafa;
+  padding: 25px;
+  box-shadow: 0px 0px 10px #fafafa;
+  margin: 25px 0;
 }
 
 .info-page-wrapper .title {
@@ -16,5 +24,19 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  line-height: 20px;
   color: #4f4f4f;
+}
+
+.info-page-wrapper .text .code {
+  background-color: #fafafa;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #f57c1f;
+  line-height: 24px;
+}
+
+.info-page-wrapper .code-example-image {
+  width: 100%;
+  margin: 10px 0;
 }

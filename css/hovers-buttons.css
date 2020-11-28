@@ -891,7 +891,6 @@
 * Hover Effect #12 ----------------------------------------------------
 */
 .hover-12 {
-  transition: all 0.5s;
   transition-property: color, border, font-weight, letter-spacing;
   transition-duration: 1s;
 }

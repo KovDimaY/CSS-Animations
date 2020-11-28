@@ -39,7 +39,6 @@
   .navigation .navigation-container {
     margin: 10px 0 0 0;
   }
-
   .navigation .navigation-container .navigation-item > a {
     height: 55px;
     font-size: 22px;
@@ -48,11 +47,22 @@
 
 @media (max-width: 600px) {
   .navigation .navigation-container {
-    margin: 0;
+    margin: 10px 0 0 0;
   }
-
   .navigation .navigation-container .navigation-item > a {
     height: 40px;
-    font-size: 14px;
+    font-size: 0;
+  }
+  .navigation .navigation-container .navigation-item > a::before {
+    font-size: 16px;
+  }
+  .navigation .navigation-container .navigation-item > .buttons::before {
+    content: "Buttons";
+  }
+  .navigation .navigation-container .navigation-item > .images::before {
+    content: "Images";
+  }
+  .navigation .navigation-container .navigation-item > .animations::before {
+    content: "Animations";
   }
 }

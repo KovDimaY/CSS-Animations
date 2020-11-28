@@ -1,3 +1,11 @@
+.navigation {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  padding-bottom: 30px;
+}
+
 .navigation .navigation-container {
   display: flex;
   justify-content: space-evenly;

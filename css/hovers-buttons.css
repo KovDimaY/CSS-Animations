@@ -1030,19 +1030,20 @@
 /**
 * Hover Effect #15 ----------------------------------------------------
 */
-.hover-15 {
-  transition: all 0.5s;
+.hover-15-1 {
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
 }
 
-.hover-15:hover {
+.hover-15-1:hover {
   color: #333333;
   border-color: #333333;
 }
 
-.hover-15:before,
-.hover-15:after,
-.hover-15 > span:before,
-.hover-15 > span:after {
+.hover-15-1:before,
+.hover-15-1:after,
+.hover-15-1 > span:before,
+.hover-15-1 > span:after {
   content: "";
   position: absolute;
   width: 26%;
@@ -1052,45 +1053,109 @@
   transition: all 0.1s;
 }
 
-.hover-15:before {
+.hover-15-1:before {
   top: 100%;
   left: 0%;
 }
 
-.hover-15:after {
+.hover-15-1:after {
   top: -100%;
   right: 0;
   transition-delay: 0.3s;
 }
 
-.hover-15:hover:before {
+.hover-15-1:hover:before {
   top: 0;
   left: 0;
 }
 
-.hover-15:hover:after {
+.hover-15-1:hover:after {
   top: 0;
   right: 0;
 }
 
-.hover-15 > span:before {
+.hover-15-1 > span:before {
   top: -100%;
   left: 25%;
   transition-delay: 0.1s;
 }
 
-.hover-15 > span:after {
+.hover-15-1 > span:after {
   bottom: -100%;
   right: 25%;
   transition-delay: 0.2s;
 }
 
-.hover-15:hover > span:before {
+.hover-15-1:hover > span:before {
   top: 0;
   left: 25%;
 }
 
-.hover-15:hover > span:after {
+.hover-15-1:hover > span:after {
+  bottom: 0;
+  right: 25%;
+}
+
+/* 15-2 */
+.hover-15-2 {
+  transition-property: color, border-color;
+  transition-duration: 0.5s;
+}
+
+.hover-15-2:hover {
+  color: #333333;
+  border-color: #333333;
+}
+
+.hover-15-2:before,
+.hover-15-2:after,
+.hover-15-2 > span:before,
+.hover-15-2 > span:after {
+  content: "";
+  position: absolute;
+  width: 26%;
+  height: 100%;
+  background-color: #f57c1f;
+  z-index: -1;
+  transition: all 0.25s;
+}
+
+.hover-15-2:before {
+  top: 0%;
+  left: -27%;
+}
+
+.hover-15-2:after {
+  top: 0%;
+  right: -27%;
+}
+
+.hover-15-2:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.hover-15-2:hover:after {
+  top: 0;
+  right: 0;
+}
+
+.hover-15-2 > span:before {
+  top: -100%;
+  left: 27%;
+}
+
+.hover-15-2 > span:after {
+  bottom: -100%;
+  right: 27%;
+}
+
+.hover-15-2:hover > span:before {
+  top: 0;
+  left: 25%;
+}
+
+.hover-15-2:hover > span:after {
   bottom: 0;
   right: 25%;
 }

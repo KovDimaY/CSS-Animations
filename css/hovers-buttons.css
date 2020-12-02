@@ -1026,3 +1026,71 @@
   left: 0;
   transform: perspective(1000px) rotateX(-75deg);
 }
+
+/**
+* Hover Effect #15 ----------------------------------------------------
+*/
+.hover-15 {
+  transition: all 0.5s;
+}
+
+.hover-15:hover {
+  color: #333333;
+  border-color: #333333;
+}
+
+.hover-15:before,
+.hover-15:after,
+.hover-15 > span:before,
+.hover-15 > span:after {
+  content: "";
+  position: absolute;
+  width: 26%;
+  height: 100%;
+  background-color: #f57c1f;
+  z-index: -1;
+  transition: all 0.1s;
+}
+
+.hover-15:before {
+  top: 100%;
+  left: 0%;
+}
+
+.hover-15:after {
+  top: -100%;
+  right: 0;
+  transition-delay: 0.3s;
+}
+
+.hover-15:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.hover-15:hover:after {
+  top: 0;
+  right: 0;
+}
+
+.hover-15 > span:before {
+  top: -100%;
+  left: 25%;
+  transition-delay: 0.1s;
+}
+
+.hover-15 > span:after {
+  bottom: -100%;
+  right: 25%;
+  transition-delay: 0.2s;
+}
+
+.hover-15:hover > span:before {
+  top: 0;
+  left: 25%;
+}
+
+.hover-15:hover > span:after {
+  bottom: 0;
+  right: 25%;
+}

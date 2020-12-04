@@ -1291,3 +1291,49 @@
   right: 25%;
   transition-delay: 0.25s;
 }
+
+/**
+* Hover Effect #16 ----------------------------------------------------
+*/
+.hover-16 {
+  overflow: visible;
+  color: #333333;
+  border: none;
+  transition: color 1s;
+}
+
+.hover-16:before {
+  content: "";
+  position: absolute;
+  height: calc(100% + 30px);
+  width: 100%;
+  top: -15px;
+  left: -2px;
+  border-left: 2px solid #f57c1f;
+  border-right: 2px solid #333333;
+  transition: all 01s;
+}
+
+.hover-16:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 30px);
+  top: -2px;
+  left: -15px;
+  border-top: 2px solid #f57c1f;
+  border-bottom: 2px solid #333333;
+  transition: all 1s;
+}
+
+.hover-16:hover {
+  color: #f57c1f;
+}
+
+.hover-16:hover:before {
+  transform: rotateY(180deg);
+}
+
+.hover-16:hover:after {
+  transform: rotateX(180deg);
+}

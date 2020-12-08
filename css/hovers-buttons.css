@@ -1521,3 +1521,53 @@
   width: 100%;
   border-color: #333333;
 }
+
+/**
+* Hover Effect #18 ----------------------------------------------------
+*/
+.hover-18 {
+  overflow: visible;
+  transition: all 0.5s;
+}
+
+.hover-18:hover {
+  color: #333333;
+}
+
+.hover-18:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f57c1f;
+  border-radius: 4px;
+  border: 2px solid #333333;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.hover-18:hover:before {
+  opacity: 1;
+  transform: rotate(5deg);
+}
+
+.hover-18 > span {
+  color: transparent;
+  position: relative;
+}
+
+.hover-18 > span:before {
+  content: "H";
+  color: #bdbdbd;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.hover-18:hover > span:before {
+  color: #333333;
+  font-size: 48px;
+  transform: translate(-55%, -35%) rotate(360deg);
+}

@@ -1571,3 +1571,30 @@
   font-size: 48px;
   transform: translate(-55%, -35%) rotate(360deg);
 }
+
+/**
+* Hover Effect #19 ----------------------------------------------------
+*/
+.hover-19 {
+  transition: all 0.5s;
+}
+
+.hover-19:hover {
+  border: 2px solid #333333;
+  color: #333333;
+  animation: shake 0.3s linear 1;
+}
+
+@keyframes shake {
+  33% {
+    transform: rotate(10deg);
+  }
+
+  66% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}

@@ -1680,3 +1680,43 @@
     right: 100%;
   }
 }
+
+/* 20-3 */
+.hover-20-3 {
+  transition: all 0.5s;
+}
+
+.hover-20-3:hover {
+  border-color: #333333;
+  color: #333333;
+}
+
+.hover-20-3:before {
+  content: "";
+  background-color: #f57c1f;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  z-index: -1;
+  transform: skewY(-5deg);
+  animation: hover203animation 1s linear infinite;
+  transition: all 0.25s;
+}
+
+.hover-20-3:hover:before {
+  height: 100%;
+  transform: skewY(0deg);
+  animation: none;
+}
+
+@keyframes hover203animation {
+  from {
+    bottom: -25%;
+  }
+
+  to {
+    bottom: 100%;
+  }
+}

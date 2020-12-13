@@ -1580,7 +1580,7 @@
 }
 
 .hover-19:hover {
-  border: 2px solid #333333;
+  border-color: #333333;
   color: #333333;
   animation: shake 0.3s linear 1;
 }
@@ -1596,5 +1596,47 @@
 
   100% {
     transform: rotate(10deg);
+  }
+}
+
+/**
+* Hover Effect #20 ----------------------------------------------------
+*/
+.hover-20 {
+  transition: all 0.5s;
+}
+
+.hover-20:hover {
+  border-color: #333333;
+  color: #333333;
+}
+
+.hover-20:before {
+  content: "";
+  background-color: #f57c1f;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transform: skew(-15deg);
+  animation: hover20animation 1s linear infinite;
+  transition: all 0.25s;
+}
+
+.hover-20:hover:before {
+  width: 100%;
+  transform: skew(0deg);
+  animation: none;
+}
+
+@keyframes hover20animation {
+  from {
+    left: -25%;
+  }
+
+  to {
+    left: 100%;
   }
 }

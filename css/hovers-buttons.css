@@ -1602,16 +1602,16 @@
 /**
 * Hover Effect #20 ----------------------------------------------------
 */
-.hover-20 {
+.hover-20-1 {
   transition: all 0.5s;
 }
 
-.hover-20:hover {
+.hover-20-1:hover {
   border-color: #333333;
   color: #333333;
 }
 
-.hover-20:before {
+.hover-20-1:before {
   content: "";
   background-color: #f57c1f;
   top: 0;
@@ -1621,22 +1621,62 @@
   position: absolute;
   z-index: -1;
   transform: skew(-15deg);
-  animation: hover20animation 1s linear infinite;
+  animation: hover201animation 1s linear infinite;
   transition: all 0.25s;
 }
 
-.hover-20:hover:before {
+.hover-20-1:hover:before {
   width: 100%;
   transform: skew(0deg);
   animation: none;
 }
 
-@keyframes hover20animation {
+@keyframes hover201animation {
   from {
     left: -25%;
   }
 
   to {
     left: 100%;
+  }
+}
+
+/* 20-2 */
+.hover-20-2 {
+  transition: all 0.5s;
+}
+
+.hover-20-2:hover {
+  border-color: #333333;
+  color: #333333;
+}
+
+.hover-20-2:before {
+  content: "";
+  background-color: #f57c1f;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transform: skew(-15deg);
+  animation: hover202animation 1s linear infinite;
+  transition: all 0.25s;
+}
+
+.hover-20-2:hover:before {
+  width: 100%;
+  transform: skew(0deg);
+  animation: none;
+}
+
+@keyframes hover202animation {
+  from {
+    right: -25%;
+  }
+
+  to {
+    right: 100%;
   }
 }

@@ -1582,10 +1582,10 @@
 .hover-19:hover {
   border-color: #333333;
   color: #333333;
-  animation: shake 0.3s linear 1;
+  animation: hover19animation 0.3s linear 1;
 }
 
-@keyframes shake {
+@keyframes hover19animation {
   33% {
     transform: rotate(10deg);
   }

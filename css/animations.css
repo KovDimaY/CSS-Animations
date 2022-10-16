@@ -898,14 +898,14 @@
 }
 
 .animation-15 .cradle > span:first-child {
-  animation: left-arm 2s ease-in infinite;
+  animation: animation15-left 2s ease-in infinite;
 }
 
 .animation-15 .cradle > span:last-child {
-  animation: right-arm 2s ease-in infinite 1s;
+  animation: animation15-right 2s ease-in infinite 1s;
 }
 
-@keyframes left-arm {
+@keyframes animation15-left {
   0% {
     transform: rotate(0deg);
   }
@@ -920,7 +920,7 @@
   }
 }
 
-@keyframes right-arm {
+@keyframes animation15-right {
   0% {
     transform: rotate(0deg);
   }
@@ -978,7 +978,7 @@
   width: 100px;
   height: 100px;
   position: relative;
-  animation: animate 1s linear infinite;
+  animation: animation16-animate 1s linear infinite;
   transform: rotate(45deg);
 }
 
@@ -986,7 +986,7 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  animation: rotate 1s linear infinite;
+  animation: animation16-rotate 1s linear infinite;
 }
 
 .animation-16 .wrapper > span:nth-child(1) {
@@ -1013,7 +1013,7 @@
   background-color: #1f78b0;
 }
 
-@keyframes rotate {
+@keyframes animation16-rotate {
   0% {
     transform: rotate(0deg);
   }
@@ -1035,7 +1035,7 @@
   }
 }
 
-@keyframes animate {
+@keyframes animation16-animate {
   0% {
     width: 100px;
     height: 100px;

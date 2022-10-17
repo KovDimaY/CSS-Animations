@@ -1,5 +1,6 @@
 const FAVICON_SIZE = 32;
 const PADDING_SIZE = 4;
+const TIME_INTERVAL = 300;
 const COLORS = [
   { background: "#f44336", text: "white" },
   { background: "#e91e63", text: "white" },
@@ -43,13 +44,14 @@ const windowLoadHandler = () => {
   if (context) {
     let iteration = 0;
 
+    drawAnimation(context, iteration);
+    favicon.href = canvas.toDataURL("image/png");
+
     setInterval(() => {
       drawAnimation(context, iteration);
-
       favicon.href = canvas.toDataURL("image/png");
-
       iteration += 1;
-    }, 1000);
+    }, TIME_INTERVAL);
   }
 };
 
